@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<th:block xmlns:th="https//www.thymeleaf.org/"
-				th:fragment="HeaderFrag">
-<ul class="nav justify-content-center">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
-</th:block>>
+<th:block xmlns:th="https//www.thymeleaf.org/" th:fragment="HeaderFrag">
+	<ul class="nav justify-content-center">
+		<li class="nav-item"><a class="nav-link active" aria-current="page" th:href="@{/}">홈</a></li>
+		<li class="nav-item"><a class="nav-link" aria-current="page" th:href="@{/boardList}">목록</a></li>
+		<li class="nav-item"><a class="nav-link" aria-current="page" th:href="@{/boardInsert}">게시글등록</a></li>
+
+	</ul>
+</th:block>
+>
